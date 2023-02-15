@@ -4,8 +4,47 @@
         <meta charset="utf-8">
         <title></title>
         <link href="./styles/index.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/7611533170.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        hey!
+        <div id="title">
+            <img id="logo" src="./images/Vector.png"/>
+            <br/>
+            <img id="titre" src="./images/Les petits plats.png"/>
+        </div>
+        <div id="main-search">
+            <input placeholder="Rechercher une recette" id="mainSearch"/>
+            <i id="search-button" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="key-words"></div>
+        <div id="advanced-search">
+            <div id="ingredientContainer">
+                <details id="ingredientDetails">
+                    <summary>
+                        <input type="text" placeholder="Ingredients" id="ingredientSearch" disabled>
+                    </summary>
+                    <div id="ingredientList"></div>
+                </details>
+            </div>
+            <div id="appareilContainer">
+                <details id="appareilDetails">
+                    <summary>
+                        <input type="text" placeholder="Appareils" id="appareilSearch" disabled>
+                    </summary>
+                    <div id="appareilList"></div>
+                </details>
+            </div>
+            <div id="ustensilContainer">
+                <details id="ustensilDetails">
+                    <summary >
+                        <input type="text" placeholder="Ustensils" id="ustensilSearch" disabled>
+                    </summary>
+                    <div id="ustensilList"></div>
+                </details>
+            </div>
+        </div>
+        <div id="results">coco</div>
+        <script type="module" src="./scripts/recipes.js"></script>
+        <script type="module" src="./scripts/index.js"></script>
     </body>
 </html>

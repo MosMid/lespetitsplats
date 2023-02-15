@@ -1,3 +1,194 @@
 html{
-    color: red;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+body{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#title{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#main-search{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#main-search input{
+    width: 99%;
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E7E7E7;
+    padding: 5px;
+}
+#main-search i{
+    font-size: 20px;
+    position: absolute;
+    right: 1%;
+    top: 12px;
+    cursor: pointer;
+}
+#key-words{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+#advanced-search{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+#results{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+summary{
+    list-style: none;
+    background: #3282F7;
+    height: 34px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+#appareilDetails, #appareilDetails summary{
+    background: #68D9A4;
+    color: white;
+}
+#ustensilDetails, #ustensilDetails summary{
+    background: #ED6454;
+    color: white;
+}
+details{
+    position: relative;
+}
+details summary::after { 
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    content:"\276E"; 
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+details[open] summary::after { 
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    content:"\276E"; 
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+summary input{
+    width: calc(100% - 40px);
+    border: none;
+    height: 28px;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #3282F7;
+    color: white;
+    font-weight: bold;
+}
+#appareilDetails summary input{
+    background: #68D9A4;
+}
+#ustensilDetails summary input{
+    background: #ED6454;
+}
+*:focus {
+    outline: none;
+}
+details{
+    border-radius: 5px;
+    max-width: 600px;
+}
+#ingredientDetails{
+    color: white;
+    background-color: #3282F7;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+#ingredientList, #appareilList, #ustensilList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.itemName{
+    width: 30%;
+    font-size: 16px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+.itemName:hover{
+    text-decoration: underline;
+}
+.keyWord{
+    background-color: #3282F7;
+    border-radius: 5px;
+    padding-top: -10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.keyWord p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: white;
+    display: inline;
+}
+.deleteItem{
+    cursor: pointer;
+    display: inline;
+    color: white;
+    margin-left: 5px;
+    font-size: 12px;
+}
+#ingredientSearch, #appareilSearch, #ustensilSearch{
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#ingredientSearch:focus{
+    background: #66a2fc;
+}
+#appareilSearch:focus{
+    background: #91dbb8;
+}
+#ustensilSearch:focus{
+    background: #f08f84;
+}
+#ingredientContainer{
+    position: absolute;
+}
+#appareilContainer{
+    position: absolute;
+    left: 200px;
+}
+#ustensilContainer{
+    position: absolute;
+    left: 400px;
 }
