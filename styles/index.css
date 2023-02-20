@@ -48,9 +48,11 @@ body{
 }
 #results{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    margin-top: 70px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 summary{
     list-style: none;
@@ -191,4 +193,56 @@ details{
 #ustensilContainer{
     position: absolute;
     left: 400px;
+}
+.cartes{
+    width: 32%;
+    margin-bottom: 20px;
+    background: #C7BEBE;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.infoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E7E7E7;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+h2{
+    font-size: 18px;
+    width: 70%;
+}
+.itemName{
+    font-size: 18px;
+    font-weight: 700;
+}
+.recipeIngredients{
+    margin-top: 10px;
+    width: 45%;
+    font-size: 12px;
+}
+.description{
+    width: 45%;
+    font-size: 12px;
+    max-height: 140px;
+    display: -webkit-box;
+   -webkit-line-clamp: 9;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+    
+}
+ul, li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+span{
+    font-weight: bold;
+}
+.clock{
+    margin-top: 20px;
 }
