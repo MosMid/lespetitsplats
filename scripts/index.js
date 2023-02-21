@@ -320,29 +320,28 @@ function mainSearchFunction(){
         recipeList = recipes
     }
     var ingredientChild = ingredientListElement.lastElementChild; 
-        while (ingredientChild) {
-            ingredientListElement.removeChild(ingredientChild);
-            ingredientChild = ingredientListElement.lastElementChild;
-        }
-        ingredientList = []
-        createIngredient()
-        var applianceChild = appareilListElement.lastElementChild; 
-        while (applianceChild) {
-            appareilListElement.removeChild(applianceChild);
-            applianceChild = appareilListElement.lastElementChild;
-        }
-        appareilList = []
-        createAppliance()
-        var ustensilChild = ustensilListElement.lastElementChild; 
-        while (ustensilChild) {
-            ustensilListElement.removeChild(ustensilChild);
-            ustensilChild = ustensilListElement.lastElementChild;
-        }
-        ustensilList = []
-        createUstensil()
-        document.querySelector('#appareilContainer').style.left = document.querySelector('#ingredientDetails').offsetWidth+10+'px'
-        document.querySelector('#ustensilContainer').style.left = document.querySelector('#ingredientDetails').offsetWidth+document.querySelector('#appareilDetails').offsetWidth+20+'px'
-        recipeBuffer = []
-        filtreResults()
-    
+    while (ingredientChild) {
+        ingredientListElement.removeChild(ingredientChild);
+        ingredientChild = ingredientListElement.lastElementChild;
+    }
+    ingredientList = []
+    createIngredient()
+    var applianceChild = appareilListElement.lastElementChild; 
+    while (applianceChild) {
+        appareilListElement.removeChild(applianceChild);
+        applianceChild = appareilListElement.lastElementChild;
+    }
+    appareilList = []
+    createAppliance()
+    var ustensilChild = ustensilListElement.lastElementChild; 
+    while (ustensilChild) {
+        ustensilListElement.removeChild(ustensilChild);
+        ustensilChild = ustensilListElement.lastElementChild;
+    }
+    ustensilList = []
+    createUstensil()
+    document.querySelector('#appareilContainer').style.left = document.querySelector('#ingredientDetails').offsetWidth+10+'px'
+    document.querySelector('#ustensilContainer').style.left = document.querySelector('#ingredientDetails').offsetWidth+document.querySelector('#appareilDetails').offsetWidth+20+'px'
+    recipeBuffer = []
+    filtreResults()
 }

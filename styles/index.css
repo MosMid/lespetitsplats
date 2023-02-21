@@ -219,6 +219,9 @@ h2{
     font-size: 18px;
     font-weight: 700;
 }
+.recipeName{
+    margin-top: 18px;
+}
 .recipeIngredients{
     margin-top: 10px;
     width: 45%;
